@@ -1,0 +1,546 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{changepage}
+\usepackage{fancyhdr}
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+   \fancyfoot[R]{\today}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newenvironment{mytab}{\begin{adjustwidth}{.5cm}{}}{\end{adjustwidth}}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[6]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \vspace{0.01in}
+			{#2}\\ \vspace{0.01in}
+			{#3}\\ \vspace{0.01in}
+			{#4}\\ \vspace{0.01in}
+            {#5}\\ \vspace{0.01in}
+            {#6}\\ \vspace{0.01in}
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+\thispagestyle{firststyle}
+
+% ------ Address --------------------------------------------------------
+\contact{Ian McCarthy}{Emory University, Department of Economics}{PAIS, 537}{Atlanta, GA 30322}{\href{www.ianmccarthyecon.com}{ianmccarthyecon.com}}{ian.mccarthy@emory.edu}
+
+% ------- Profile ---------------------------------------------------
+%\begin{category}{Profile}
+%\citemnobullet Ph.D. Economist with experience in the application of microeconomic theory, %statistical, and econometric methods to both academic papers and applied business disputes.  %Experience in damage calculations involving intellectual property, employment, and %securities-related disputes, including significant experience in econometric modeling.  Assisted %clients in a variety of industries including healthcare, pharmaceuticals, education, and %networking, among others.
+%\end{category}
+
+\header{Professional Appointments}
+\begin{body}
+  \vspace{14pt}
+  \textbf{Emory University}, Atlanta, GA \\
+  \hspace{0.05in} Associate Professor, Department of Economics \hfill 2020 -- Present \\
+  \hspace{0.05in} Assistant Professor, Department of Economics \hfill 2014 -- 2020 \\
+
+  \medskip
+  \textbf{National Bureau of Economic Research} \\
+  \hspace{0.05in} Faculty Research Fellow, Health Economics Group \hfill 2017 -- Present \\
+
+  \medskip
+  \textbf{Southern Methodist University}, Dallas, TX \\
+  \hspace{0.05in} Adjunct Professor, Department of Economics \hfill 2011 -- 2014 \\
+
+  \medskip
+  \textbf{Baylor Health Care System}, Dallas, TX \\
+  \hspace{0.05in} Director of Health Economics \hfill 2013 -- 2014 \\
+  \hspace{0.05in} Associate Investigator \hfill 2012 -- 2013 \\
+
+  \medskip
+  \textbf{FTI Consulting}, Dallas, TX \\
+  \hspace{0.05in} Director, Economic Consulting Practice \hfill 2010 -- 2012 \\
+  \hspace{0.05in} Senior Consultant, Economic Consulting Practice \hfill 2008 -- 2010 \\
+
+  \medskip
+  \textbf{Kimetrica} \\
+  \hspace{0.05in} External Consultant \hfill 2007 -- 2008 \\
+
+\end{body}
+\smallskip
+
+
+% ------- Education ---------------------------------------------------
+\header{Education}
+\begin{body}
+  \vspace{14pt}
+ \textbf{Indiana University}, Bloomington, IN\\
+  \hspace{0.05in} Ph.D. in Economics \hfill May 2008\\
+  \hspace{0.05in} M.A. in Economics \hfill Feb 2007 \\
+ \medskip
+ \textbf{University of North Texas}, Denton, TX\\
+  \hspace{0.05in} B.B.A. in Economics \hfill May 2004\\
+\end{body}
+\smallskip
+
+% --------- Research ----------------------------------------------------
+\header{Peer-reviewed Publications in Economics}
+\begin{body}
+  \vspace{14pt}
+  \begin{enumerate}
+    \item Howard, D. and \textbf{I. McCarthy}. ``Deterrence effects of antifraud and abuse enforcement in health care,'' with David Howard, \textit{Journal of Health Economics}, forthcoming
+    \item Harris, M., Y. Liu, and \textbf{I. McCarthy}. 2020. ``Capacity Constraints and Time Allocation in Public Health Clinics,'' \textit{Health Economics} 29(3):324-336.
+    \item \textbf{McCarthy, I.} 2018. ``Quality Disclosure and the Timing of Insurers' Adjustments: Evidence from Medicare Advantage,'' \textit{Journal of Health Economics} 61:13-26.
+    \item \textbf{McCarthy, I.} and S. Huang. 2018. ``Vertical Alignment Between Hospitals and Physicians as a Bargaining Response to Commercial Insurance Markets,'' \textit{Review of Industrial Organization} 53:7-29.
+    \item Almada, L. and \textbf{I. McCarthy}. 2017. ``It's a Cruel Summer: Household Responses to Reductions in Government Nutrition Assistance,'' \textit{Journal of Economic Behavior and Organization} 143:45-57.
+    \item \textbf{McCarthy, I.} and M. Darden. 2017. ``Supply-side Responses to Public Quality Ratings: Evidence from Medicare Advantage,'' \textit{American Journal of Health Economics} 3(2):140-164.
+    \item \textbf{McCarthy, I.} 2016. ``Eliminating Composite Bias in Treatment Effects Estimates: Applications to Quality of Life Assessment,'' \textit{Journal of Health Economics} 50:47-58.
+    \item Almada, L., \textbf{I. McCarthy}, and R. Tchernis. 2016. ``What Can We Learn about the Effects of Food Stamps on Obesity in the Presence of Misreporting?'' \textit{American Journal of Agricultural Economics}, 98(4):997-1017. \\
+        \begin{mytab} \textit{Honorable Mention (2nd of 18 papers nominated) for Best Paper in the Economics of Food Safety and Nutrition by the Agricultural and Applied Economics Association}
+        \end{mytab}
+    \item \textbf{McCarthy, I.} 2016. ``Advertising Intensity and Welfare in an Equilibrium Search Model,'' \textit{Economics Letters} 141:20-26.
+    \item Darden, M. and \textbf{I. McCarthy}. 2015. ``The Star Treatment: Estimating the Impact of Star Ratings on Medicare Advantage Enrollments,'' \textit{Journal of Human Resources} 50(4):980-1008.
+    \item \textbf{McCarthy, I.} 2015. ``Putting the Patient in Patient Reported Outcomes: A Robust Methodology for Health Outcomes Assessment,'' \textit{Health Economics} 24(12):1588-1603.
+    \item \textbf{McCarthy, I.}, D. Millimet, and M. Roy. 2015. ``Bounding Treatment Effects: Stata Command for the Partial Identification of the Average Treatment Effect with Endogenous and Misreported Treatment Assignment,'' \textit{The Stata Journal} 15(2):411-436.
+    \item \textbf{McCarthy, I.}, C. Robinson, S. Huq, M. Philastre, and R. Fine. 2015. ``Cost Savings from Palliative Care Teams and Guidance for a Financially Viable Palliative Care Program,'' \textit{Health Services Research} 50(1):217-236.
+    \item \textbf{McCarthy, I.}, D. Millimet, and R. Tchernis. 2014. ``The bmte Command: Methods for the Estimation of Treatment Effects when Exclusion Restrictions are Unavailable,'' \textit{The Stata Journal} 14(3):670-683.
+    \item \textbf{McCarthy, I.} and R. Tchernis. 2010. ``Search Costs and Medicare Plan Choice,'' \textit{Health Economics} 19(10):1142-1165.
+    \item \textbf{McCarthy, I.} 2009. ``Simulating Sequential Search Models with Genetic Algorithms: Analysis of Price Ceilings, Taxes, Advertising and Welfare,'' \textit{Journal of Computational Economics} 34(3):217-241.
+  \end{enumerate}
+\end{body}
+\smallskip
+
+\header{Papers Currently Under Review}
+\begin{body}
+  \vspace{14pt}
+  \begin{enumerate}
+    \item ``How does hospital-physician integration affect hospital prices and quality of care?'' with Haizhen Lin and Michael Richards, \textit{Revise and Resubmit}.
+    \item ``Multimarket contact in health insurance: Evidence from Medicare Advantage,'' with Haizhen Lin.
+    \item ``Who pays in pay for performance? Evidence from hospital pricing,'' with Michael Darden and Eric Barrette.
+    \item ``User reviews and hospital prices,'' with Leonardo S\'{a}nchez Arag\'{o}n and Kaylyn Sanbower.
+  \end{enumerate}
+\end{body}
+\smallskip
+
+\header{Draft Papers}
+\begin{body}
+  \vspace{14pt}
+  \begin{enumerate}
+    \item ``Physician Affiliation and Hospital Production.''
+    \item ``Owning the Agent: Hospital influence on physician behaviors,'' with Haizhen Lin and Michael Richards.
+  \end{enumerate}
+\end{body}
+\smallskip
+
+\header{Working Projects}
+\begin{body}
+  \vspace{14pt}
+  \begin{enumerate}
+    \item ``Decision assistance and health insurance choice,'' with Evan Saltzman.
+    \item ``How efficient is the market for physician referrals?'' with Seth Richards-Shubik.
+    \item ``The specialization premium in hospital care: Evidence from Children's Hospitals,'' with Mehul Raval.
+    \item ``Physician referral networks and the role of insurers,'' with Sebastian Linde.
+  \end{enumerate}
+\end{body}
+\smallskip
+
+\header{Peer-reviewed Publications in Medical Journals}
+\begin{body}
+  \vspace{14pt}
+  \begin{enumerate}
+    \item Piper, K., K. Baxter, \textbf{I. McCarthy}, M. Raval. 2019. ``Distinguishing Children's Hospitals from Non-Children's Hospitals in Large Claims Data,'' \textit{Pediatrics}, forthcoming.
+    \item Sarda, S., H. Short, J. Hockenberry, \textbf{I. McCarthy}, M. Raval. 2017. ``Regional Variation in Rates of Pediatric Perforated Appendicitis,'' \textit{Journal of Pediatric Surgery} 52(9):1488-1491.
+    \item Robinson, C., R. Hostin, M. O'Brien, \textbf{I. McCarthy}, M. Gupta, V. Lafage, R. Hart, F. Schwab, J. Smith, C. Ames. 2016. ``A Multi-Center Comparison of Inpatient Resource Use for Adult Spinal Deformity Surgery.'' \textit{Spine} 41(7):224-233.
+    \item Bess, S., B. Line, K. Fu, \textbf{I. McCarthy}, V. Lafage, F. Schwab, C. Shaffrey, C. Ames, B. Akbarnia, O. Boachie-Adjei, H.J. Kim, M. Kelly, D. Burton, R. Hart, E. Klineberg, K. Kebaish, R. Hostin, G. Mundis, J. Smith. 2016 ``The Health Impact of Symptomatic Adult Spinal Deformity: Comparison of Deformity Types to United States Population Norms and Chronic Diseases.'' \textit{Spine} 41(3):603-609.
+    \item Protopsaltis, T., J. Scheer, J. Terran, J. Smith, H.J. Kim, G. Mundis, R. Hart, \textbf{I. McCarthy}, E. Klineberg, V. Lafage, S. Bess, F. Schwab, C. Shaffrey, C. Ames. 2015. ``How the Neck Affects the Back: Changes in Regional Cervical Sagittal Alignment Correlate to HRQL Improvement in Adult Thoracolumbar Deformity Patients at Two-Year Follow-Up,'' \textit{Journal of Neurosurgery: Spine} 23(2):153-158.
+    \item Scheer, J., V. Lafage, J. Smith, V. Deviren, R. Hostin, \textbf{I. McCarthy}, G. Mundis, D. Burton, E. Klineberg, M. Gupta, K. Kebaish, C. Shaffrey, S. Bess, F. Schwab, C. Ames. 2015. ``Maintenance of Radiographic Correction at 2 years Following Lumbar Pedicle Subtraction Osteotomy is Superior with Upper Thoracic Compared with Thoracolumbar Junction Upper Instrumented Vertebra,'' \textit{European Spine Journal} 24(Supplement 1):121-130.
+    \item \textbf{McCarthy, I.}, C. Robinson, M. O'Brien, R. Hostin. 2014. ``Total Costs of Multi-level Fusion Surgery Including Outpatient Care,'' \textit{The Spine Journal: SpineLine} May-June:21-25.
+    \item Acosta, F., C. Ames, P. Hsieh, \textbf{I. McCarthy}. 2014. ``Introduction: Costs and Benefits of Modern Day Spine Care,'' \textit{Journal of Neurosurgery: Neurosurgical Focus} 36(6):1-2.
+    \item \textbf{McCarthy, I.}, M. O'Brien, C. Ames, C. Robinson, T. Errico, D. Polly, R. Hostin. 2014. ``The Incremental Cost-effectiveness of Adult Spinal Deformity Surgery: Comparison of Observed QALYs with Surgery to Predicted QALYs without Surgery,'' \textit{Journal of Neurosurgery: Neurosurgical Focus} 36(5):E3.
+    \item Goz, V., \textbf{I. McCarthy}, K. Dallas, J. Weinreb, J. Bendo, V. Lafage, T. Errico. 2014. ``Venous Thromboembolic Events in Spine Surgery Patients; which patients are high risk?'' \textit{Journal of Bone and Joint Surgery} 96(11):936-942.
+    \item Scheer, J., V. Lafage, J. Smith, V. Deviren, R. Hostin, \textbf{I. McCarthy}, G. Mundis, D. Burton, E. Klineberg, M. Gupta, K. Kebaish, C. Shaffrey, S. Bess, F. Schwab, C. Ames. 2014. ``The Impact of Age on Likelihood to Reach Minimal Clinically Important Difference (MCID) in 374 Three-Column Spinal Osteotomies,'' \textit{Journal of Neurosurgery: Spine} 20(3):306-12.
+    \item \textbf{McCarthy, I.}, R. Hostin, C. Ames, H. Kim, J. Smith, O. Boachie-Adjei, F. Schwab, E. Klineberg, C. Shaffrey, M. Gupta, D. Polly. 2014. ``Total Hospital Costs of Surgical Treatment for Adult Spinal Deformity: An Extended Follow-up Study,'' \textit{The Spine Journal} 14(10)2326-2333.
+    \item Goz, V., J. Weinreb, K. Dallas, \textbf{I. McCarthy}, J. Paul, T. Protopsaltis, J. Goldstein, V. Lafage, T. Errico. 2014. ``Cervical Disk Arthroplasty versus Anterior Cervical Discectomy and Fusion; Utilization and Perioperative Outcomes.'' \textit{Journal of Spine} 3(5):178.
+    \item Klineberg, E., M. Gupta, \textbf{I. McCarthy}, R. Hostin. 2013. ``Detection of Pseudarthrosis in Adult Spinal Deformity: The use of health-related quality-of-life outcomes to predict pseudarthrosis.'' \textit{Journal of Spinal Disorders \& Techniques} (ePub ahead of print).
+    \item Hostin, R., M. O'Brien, \textbf{I. McCarthy}, S. Bess, M. Gupta, E. Klineberg. 2013. ``Retrospective Study of Anterior Interbody Fusion Rates and Patient Outcomes of Using Mineralized Collagen and Bone Marrow Aspirate in Multilevel Adult Spinal Deformity Surgery,'' \textit{Journal of Spinal Disorders \& Techniques} (ePub ahead of print).
+    \item Hart, B., \textbf{I. McCarthy}, M. O'Brien, S. Bess, B. Line, O. Boachie-Adjei, D. Burton, M. Gupta, C. Ames, V. Deviren, K. Kebaish, C. Shaffrey, K. Wood, R. Hart, R. Hostin. 2013. ``Identification of Decision Criteria for Revision Surgery among Patients with Proximal Junctional Failure following Surgical Treatment for Spinal Deformity,'' \textit{Spine} 38(19):E1223-E1227.
+    \item \textbf{McCarthy, I.}, R. Hostin, M. O'Brien, N. Felming, G. Ogola, R. Kudyakov, K. Richter, R. Saigal, S. Berven, C. Ames. 2013. ``Analysis of the Direct Cost of Surgery for Four Diagnostic Categories of Adult Spinal Deformity,'' \textit{The Spine Journal} 13(12):1843-1848.
+    \item Goz, V., J. Weinreb, \textbf{I. McCarthy}, F. Schwab, V. Lafage, T. Errico. 2013. ``Perioperative Complications and Mortality after Spinal Fusions; Analysis of Trends and Risk Factors.'' \textit{Spine} 38(22):1970-1976.
+    \item \textbf{McCarthy, I.}, R. Hostin, M. O'Brien, N. Fleming, G. Ogola, R. Kudyakov, K. Richter, R. Saigal, S. Berven, V. Deviren, C. Ames. 2013. ``Cost-Effectiveness of Surgical Treatment for Adult Spinal Deformity: A Comparison of Dollars per Quality of Life Improvement across Health Domains,'' \textit{Spine Deformity} 1(4):293-298.
+    \item \textbf{McCarthy, I.}, R. Hostin, M. O'Brien, R. Saigal, C. Ames. 2013. ``Health Economic Analysis of Adult Deformity Surgery,'' \textit{Neurosurgery Clinics of North America} 24(2):293-304.
+    \item Hart, R., \textbf{I. McCarthy}, C. Ames, C. Shaffrey, D. Kojo Hamilton, and R. Hostin. 2013. ``Proximal Junctional Kyphosis and Proximal Junctional Failure,'' \textit{Neurosurgery Clinics of North America} 24(2):213-218.
+    \item Hostin, R., \textbf{I. McCarthy}, M. O'Brien, S. Bess, B. Line, O. Boachie-Adjei, D. Burton, M. Gupta, C. Ames, V. Deviren, K. Kebaish, C. Shaffrey, K. Wood, R. Hart. 2013. ``Incidence, Mode, and Location of Acute Proximal Junctional Failure following Surgical Treatment for Adult Spinal Deformity,'' \textit{Spine} 38(12):1008-1015.
+  \end{enumerate}
+\end{body}
+\smallskip
+
+\header{Chapters, Reviews, and Other Publications}
+\begin{body}
+  \vspace{14pt}
+  \begin{enumerate}
+    \item Book review of \textit{Richly Parameterized Linear Models: Additive, Time Series, and Spatial Models Using Random Effects}, by James Hodges. 2016. \textit{Journal of the American Statistical Association} 110(511):1323.
+    \item Fleming, N., A. Masica, and \textbf{I. McCarthy}. 2013. ``Evaluation of Clinical, Economic, and Financial Outcomes,'' in D. Ballard (Ed.), \textit{Achieving STEEEP Health Care} 85-92. Boca Raton, FL: CRC Press.
+      \item \textbf{McCarthy, I.} and R. Tchernis. 2011. ``On the Estimation of Selection Models when Participation is Endogenous and Misclassified,'' in D. Drukker (Ed.), \textit{Advances in Econometrics, Missing-Data Methods: Cross-sectional Methods and Applications} 27:179-207. London: Emerald Group Publishing.
+    \item \textbf{McCarthy, I.} 2011. ``Computational Applications in Consumer Search Models,'' in A. Tavidze (Ed.), \textit{Progress in Economics Research} 18:249-267. New York: Nova Science Publishers.
+    \item \textbf{McCarthy, I.} 2010. ``A Survey on the Economics of the U.S. Pharmaceutical Industry,'' in D. Slottje and R. Tchernis (Eds.), \textit{Contributions to Economic Analysis: Current Issues in Health Economics} 290:201-241. London: Emerald Group Publishing.
+    \item \textit{An Online Handbook for the Use of Contemporary Econometrics in Economic Education Research}, with W. Becker and G. Gilpin, American Economic Association Committee on Economic Education, 2010.
+    \item \textbf{McCarthy, I.} 2009. ``Consumer Search with Uninformed Buyers and Imperfect Recall,'' \textit{Journal of Current Issues in Finance, Business, and Economics} 3(2/3):275-282.
+    \item Basmann, R., K. Hayes, M. McAleer, \textbf{I. McCarthy}, and D. Slottje. 2009. ``The GFT Utility Function,'' in D. Slottje (Ed.), \textit{Contributions to Economics Analysis: Quantifying Consumer Preferences} 288:119-147. London: Emerald Group Publishing.
+  \end{enumerate}
+\end{body}
+\smallskip
+
+\header{Presentations}
+\begin{body}
+  \vspace{14pt}
+  \vspace{-.05in} \scriptsize
+  \hspace{-.2in} * denotes scheduled presentation that was ultimately cancelled
+  \normalsize
+
+  \hspace{-.2in} 2020 \\
+  American Economic Association Annual Meeting, San Diego, CA \\
+  American Society of Health Economists Meeting, St. Louis, MO* \\
+  \hspace{-.2in} 2019 \\
+  American Economic Association Annual Meeting, Atlanta, GA \\
+  West Virginia University, Morgantown, WV (Invited) \\
+  Baylor University, Waco, TX (Invited) \\
+  Indiana University, Bloomington, IN (Invited) \\
+  Indiana University - Purdue University, Indianapolis, IN (Invited) \\
+  Southeastern Health Economics Study Group, Knoxville, TN \\
+  \hspace{-.2in} 2018 \\
+  University of Nevada at Las Vegas, Las Vegas, NV (Invited) \\
+  Association for Public Policy Analysis and Management Annual Conference, Washington, D.C. \\
+  Johns Hopkins University, Baltimore, MD (Invited) \\
+  George Washington University, Washington, D.C. (Invited) \\
+  National Bureau of Economic Research, Health Care Summer Meeting, Cambridge, MA \\
+  National Bureau of Economic Research, Industrial Organization Summer Meeting, Cambridge, MA \\
+  Society for Institutional and Organizational Economics, HEC Montreal, Montreal, Canada \\
+  American Society of Health Economists Meeting, Emory University, Atlanta, GA \\
+  Tennessee Empirical Applied Microeconomics Festival, University of Tennessee, Knoxville, TN \\
+  University of North Texas, Denton, TX (Invited) \\
+  American Economic Association Annual Meeting, Philadelphia, PA \\
+  \hspace{-.2in} 2017 \\
+  Georgia Health Economics Research Day, Atlanta, GA \\
+  Southeastern Health Economics Study Group, Nashville, TN \\
+  Health Services Research Day, Emory University, Atlanta, GA, May (Invited) \\
+  International Health Economics Association 12th World Congress, Boston, MA (Session Chair) \\
+  Southern Methodist University, Dallas, TX (Invited) \\
+  Midwest Economics Association Meetings, Cincinnati, OH \\
+  American Economic Association Annual Meeting, Chicago, IL \\
+  \hspace{-.2in} 2016 \\
+  Southeastern Health Economics Study Group, Richmond, VA \\
+  Western Economics Association International Conference, Portland, OR \\
+  American Society of Health Economists Meeting, University of Pennsylvania, Philadelphia, PA \\
+  South Carolina Applied Microeconomics Day, Greenville, SC (Invited)  \\
+  Georgia State University Brownbag Seminar, Atlanta, GA (Invited) \\
+  American Economic Association Annual Meeting, San Francisco, CA \\
+  \hspace{-.2in} 2015 \\
+  Annual Health Economics Conference, Athens, GA \\
+  Southeastern Health Economics Study Group, Atlanta, GA \\
+  Southern Economics Association Conference, New Orleans, LA \\
+  International Health Economics Association 11th World Congress, Bocconi University, Milan, Italy \\
+  Health Services Research Day, Emory University, Atlanta, GA, May (Invited) \\
+  Midwest Health Economics Conference, University of Iowa, Iowa City, IA \\
+  Georgia State University, Atlanta, GA (Invited) \\
+  Tulane University, New Orleans, LA (Invited) \\
+  \hspace{-.2in} 2014 \\
+  Southeastern Health Economics Study Group, Tallahassee, FL \\
+  Rollins School of Public Health, Atlanta, GA (Invited)  \\
+  Georgia State University, Atlanta, GA (Invited) \\
+  AcademyHealth Annual Research Meeting, San Diego, CA  \\
+  9th Annual Utah Health Services Research Conference, University of Utah (Invited) \\
+\end{body}
+\smallskip
+
+% ------- Skills ------------------------------------------------------
+%\begin{category}{Skills}
+%\citembullet \textbf{Currently using:} Stata, R, SQL Server, Microsoft Access, Microsoft Office %Suite, LaTeX
+%\citembullet \textbf{Some experience:} SAS, Fortran, HTML/XML/XHTML, CSS
+%\end{category}
+
+% ------- Grant Funding ------------------------------------------------------
+
+\header{Grant Funding}
+\begin{body}
+
+\vspace{14pt}
+
+ \textbf{National Institute for Health Care Management} \hfill 1/2018 -- 11/2018\\
+ \textbf{Budget: \$49,000} \\
+ ``Private Equity Ownership and Healthcare Quality and Cost: The Evaluation of Hospital Leveraged Buyouts.'' \\
+ \textit{Role:} External Consultant \\
+
+ \medskip
+ \textbf{AHRQ (R01HS024712)} \hfill 4/2017 -- 1/2021 \\
+ \textbf{Budget: \$1,050,158} \\
+ ``The Value of Children's Hospitals - Are Increased Costs Justified by Improved Outcomes or Driven by Internal and External Economic Forces?'' \\
+ \textit{Role:} Co-investigator (PI: Mehul Raval, Emory University School of Medicine) \\
+
+ \medskip
+ \textbf{UK Center for Poverty Research} \hfill 8/2016 -- 7/2018 \\
+ \textbf{\$50,000} \\
+ ``SNAP Benefit Levels, Food Insecurity, and Diet Quality: Evidence from the Food Acquisition and Purchase Survey'' \\
+%  \textit{Goal:} Examine how SNAP benefit levels on the intensive margin affect food insecurity, diet quality, and household expenditures. \\
+ \textit{Role:} External Consultant \\
+
+ \medskip
+ \textbf{AHRQ (R00HS022431)} \hfill 9/2014 -- 8/2018 \\
+ \textbf{\$743,360} \\
+ ``The Measurement and Evaluation of Competition in Healthcare Delivery Markets'' \\
+% \textit{Goal:} 1) develop a new measure of healthcare provider market share that incorporates a hospital's broader physician network (termed PHN concentration), 2) examine the relationship between PHN concentration and quality of care, access to care, and healthcare utilization, and 3) investigate the mechanism by which PHN concentration influences hospital behaviors and ultimately quality of care. The research also examines the relationship between changes in concentration and patient loyalty (or fragmentation of care received), and ultimately how that relationship impacts quality of care, access to care, and healthcare utilization. \\
+ \textit{Role:} PI \\
+
+ \textbf{AHRQ (K99HS022431)} \hfill 7/2013 -- 8/2014 \\
+ \textbf{\$169,445} \\
+ ``Analysis and Dissemination of Patient-Centered Outcomes and its Impact on Patient and Physician Shared Decision-Making'' \\
+% \textit{Goal:} 1) advance empirical methodologies for the appropriate analysis of patient-reported outcome measures; and 2) assess and define healthcare value across patient groups and the practical implications of information availability on patient and physician decision-making.  \\
+ \textit{Role:} PI \\
+
+%\medskip
+% \textbf{Gilead Sciences, IN-US-259-1332} \hfill 12/2013 -- 12/2015 \\
+% \textbf{\$492,279} \\
+%``Effectiveness of Ranolazine at Admission and/or Discharge in Reducing Re-admissions after PCI'' \\
+% \textit{Goal:} Assess the comparative and cost-effectiveness of Ranolazine following PCI. \\
+% \textit{Role:} Co-investigator
+
+\medskip
+ \textbf{GlaxoSmithKline} \hfill 12/2013 -- 12/2015 \\
+ \textbf{\$108,125} \\
+ ``Barriers to Collecting and Analyzing Patient-Reported Outcome Data'' \\
+% \textit{Goal:} develop guidelines for successful collection and analysis of patient-reported outcomes data on a large-scale by identifying the perceived barriers and benefits to collecting and analyzing these data across different stakeholders. \\
+ \textit{Role:} PI (12/2013 -- 6/2014), transferred to co-investigator \\
+
+%\medskip
+% \textbf{NIH-AHRQ (R03HS022621-01)} \hfill 2013 -- 2015 \\
+% ``Costs of Transforming Established Primary Care Practices to Patient-Centered Medical Homes'' \\
+% \textit{Goal:} quantify the time, effort, capital, and total direct and indirect financial costs associated with transformation of %primary care practices to Patient-Centered Medical Homes.  \\
+% \textit{Role:} Co-investigator \\
+
+\medskip
+ \textbf{Baylor Heart and Vascular Institute, Cardiovascular Research Review Committee, \\ The Jack and Jane Hamilton Research Fund} \hfill 11/2012 -- 12/2014 \\
+ \textbf{\$55,560} \\
+ ``Potentially Avoidable Replacements of Primary Prevention Implantable Cardioverter-Defibrillators'' \\
+% \textit{Goal:} to identify and quantify potentially avoidable ICD replacements and the associated cost of replacement for all patients undergoing ICD therapy for primary prevention purposes. \\
+ \textit{Role:} PI (11/2012 -- 6/2014), transferred to co-investigator \\
+
+\medskip
+ \textbf{NuVasive, Inc.} \hfill 2/2012 -- 1/2013 \\
+ \textbf{\$150,000} \\
+ ``Analysis of Complications, Quality-of-Life Outcomes, and Cost of Surgical Treatment for Spinal Deformity'' \\
+% \textit{Goal:} to analyze a wide variety of health-related quality-of-life questions and cost-effectiveness analyses relevant to adult spinal deformity patients. \\
+ \textit{Role:} PI \\
+
+\medskip
+ \textbf{Baylor Health Care System Foundation, Seeger Endowment Fund} \hfill 1/2012 -- 12/2012 \\
+ \textbf{\$185,000} \\
+ ``Cost-effectiveness, Quality-of-Life, and Decision Analysis in the Surgical Treatment of Spinal Deformity'' \\
+% \textit{Goal:} derive and validate a decision model for the surgical treatment of adult spinal deformity, with particular emphasis on the impact of improved quality-of-life and cost information on patient decision making. \\
+ \textit{Role:} Co-investigator \\
+
+\end{body}
+\smallskip
+
+% -------- Referee --------------------------------------------
+\header{Referee Activity}
+\begin{body}
+  \vspace{14pt}
+  Referee for \textit{Review of Economics and Statistics}, \textit{American Economic Journal: Applied Economics}, \textit{Journal of Health Economics} (x3), \textit{Journal of the American Statistical Association}, \textit{Journal of Human Resources}, \textit{Health Affairs}, \textit{Health Economics} (x5), \textit{American Journal of Agricultural Economics}, \textit{American Journal of Health Economics} (x2), \textit{Journal of Policy Analysis and Management}, \textit{The B.E. Journal of Economic Analysis and Policy}, \textit{Southern Economic Journal}, \textit{Empirical Economics} (x2), \textit{Review of Economics of the Household}, \textit{Food Policy}, \textit{Review of Industrial Organization}, \textit{Economic Inquiry} (x2), \textit{Contemporary Economic Policy}, \textit{Economics and Human Biology} (x2), \textit{Stata Journal}, \textit{Journal of Applied Statistics}, \textit{International Journal of Mathematical Modelling and Numerical Optimisation}, \textit{Mayo Clinic Proceedings} (x3), and \textit{British Medical Journal}
+\end{body}
+\smallskip
+
+% -------- Other Professional Activity ------------------------
+\header{Other Professional Activity}
+\begin{body}
+  \vspace{14pt}
+  North American Spine Society, Value Committee Member \hfill 2013 -- 2014 \\
+  \textit{Significance} Magazine News Editor \hfill 2010 -- 2013
+\end{body}
+\smallskip
+
+
+% -------- Awards --------------------------------------------
+\header{Awards}
+\begin{body}
+ \vspace{14pt}
+ \textbf{Excellence in Teaching}, Phi Beta Kappa Society, Emory University \hfill 2020 \\
+ Awarded to a faculty member ``who has encouraged and helped students to excel, and who exemplifies intellectual rigor and enthusiasm for scholarly pursuits.''
+
+ \medskip
+ \textbf{Honorable Mention, Best Paper Award}, Agricultural and Applied Economics Association \hfill 2016 \\
+ Best paper in the economics of food safety and nutrition, awarded to the paper, ``What Can We Learn about the Effects of Food Stamps on Obesity in the Presence of Misreporting?''
+
+ \medskip
+ \textbf{Shingo Research and Professional Publication Award}, Shingo Prize for Operational Excellence \hfill 2014 \\
+ Awarded to the book, \textit{Achieving STEEEP Healthcare}, for demonstrating ``a commitment to promoting Operational Excellence through published works''
+
+ \medskip
+ \textbf{Value Abstract Award}, North American Spine Society \hfill 2013 \\
+ ``Calculating and Defining Minimum Clinical Important Difference (MCID) and Substantial Clinical Benefit (SCB) Values for Adult Spinal Deformity (ASD): A Robust Methodology for Consistent Data Reporting''
+
+ \medskip
+ \textbf{Best Poster Award}, North American Spine Society \hfill 2012 \\
+ ``Analysis of Health-Related Quality-of-Life following Surgery for Adult Spinal Deformity''
+
+ \medskip
+ \textbf{Best Third Year Paper Award}, Indiana University \hfill 2007 \\
+ ``Advertising Intensity and Welfare in an Equilibrium Sequential Search Model''
+
+ \medskip
+ \textbf{Fred and Judy Witney Scholarship Award}, Indiana University \hfill 2007
+\end{body}
+\smallskip
+
+% -------- Memberships --------------------------------------------
+\header{Active Memberships}
+\begin{body}
+  \vspace{14pt}
+  American Economic Association \hfill 2010 -- Present \\
+  International Health Economics Association \hfill 2011 -- Present \\
+  American Society of Health Economists \hfill 2012 -- Present \\
+  Southern Economic Association \hfill 2014 -- Present \\
+%  American Statistical Association \hfill 2010 -- 2016 \\
+\end{body}
+\smallskip
+
+% -------- Teaching --------------------------------------------
+\header{Teaching}
+\begin{body}
+ \vspace{14pt}
+ \textbf{Courses at Emory University} \\
+ ECON 470/HLTH 470, Research in Health Economics \hfill Spring 2020 \\
+ ECON 771, Health Economics II \hfill 2018 -- present \\
+ ECON 372, Economics of Healthcare Markets \hfill 2015 -- present \\
+ ECON 190, Current Issues in U.S. Healthcare \hfill 2014 -- 2017 \\
+ ECON 372W, Health Policy and Economics \hfill 2014 \\
+
+ \medskip
+ \textbf{Courses at Southern Methodist University} \\
+ ECON 5320, Health Economics \hfill 2014 \\
+ ECON 6381, Economic Analysis I \hfill Fall 2011 -- 2013 \\
+
+ \medskip
+ \textbf{Courses at Indiana University} \\
+ ECON 370, Introduction to Statistics in Business and Economics \hfill 2007 -- 2008 \\
+ ECON 201, Introduction to Microeconomics \hfill 2007 \\
+
+\end{body}
+\smallskip
+
+% -------- Advising --------------------------------------------
+\header{Advising}
+\begin{body}
+  \vspace{14pt}
+  \textbf{Doctoral Dissertation Committee (Emory)} \\
+    Manasvini Singh, Rollins School of Public Health \hfill Expected 2020 \\
+    Alexander Lundberg, \textit{Placement:} West Virginia University \hfill 2017 \\
+    Otto Lenhart, \textit{Placement:} University of West Florida \hfill 2016 \\
+
+  \medskip
+  \textbf{Doctoral Dissertation Committee (Outside Member)} \\
+    Derek Hoodin (GSU) \hfill Expected 2021 \\
+    Nicardo McInnis (GSU) \hfill Expected 2020 \\
+    Augustine Denteh (GSU) \textit{Placement:} Tulane University \hfill 2019 \\
+    Benjamin Ukert (GSU), \textit{Placement:} Postdoc at University of Pennsylvania (Wharton) \hfill 2016 \\
+
+  \medskip
+  \textbf{Undergraduate Honors Thesis (Chair)} \\
+    Mathew Padanilam \hfill 2019 \\
+    Timothy Anders Olsen \hfill 2018 \\
+    Shaina Shapera \hfill 2017 \\
+    Zhu Zhang \hfill 2017 \\
+    Yixuan Chen \hfill 2016 \\
+    Stephanie Fang \hfill 2015 \\
+    Ryan Gorman \hfill 2015 \\
+\end{body}
+\smallskip
+
+% -------- Other Service Activities --------------------------------------------
+%\header{Other Emory Service Activities}
+%\begin{body}
+%  \vspace{14pt}
+%  Member of Selection Committee for Assistant Professor Search in Health Economics \hfill 2017 -- 2018 \\
+%  Member of Economics Department Admissions Committee for PhD Program \hfill 2016 -- 2017 \\
+%  Member of Selection Committee for Joint QuanTM Search \hfill 2016 -- 2017 \\
+%  Assisted in Oxford College Assistant Professor Search \hfill 2016 -- 2017 \\
+% Participant in Cookies, Coffee, and Care with Office of Residence Life \hfill 2017 \\
+% Participant in Economics Undergraduate Research Night \hfill 2017 \\
+% Participant in Phi Eta Sigma Research Night \hfill 2017 \\
+% Participant in April Open House Faculty Lectures \hfill 2016 -- 2017 \\
+% Participant in Freshman Orientation and Academic Showcase \hfill 2015 -- 2017 \\
+% Organizer for Bi-annual Georgia Health Economics Research Day  \hfill 2015 -- Present \\
+%  Member of Economics Department Assessment Committee \hfill 2014 -- Present \\
+%  Chair of Economics Department Grant Writing Committee \hfill 2014 -- Present \\
+%  Chair of Economics Department IRB Review Committee \hfill 2014 -- Present \\
+%  Faculty Advisor for ``American Enterprise Institute On Campus'' \hfill 2014 -- Present \\
+%\end{body}
+
+
+% -------- References --------------------------------------------
+%\begin{category}{References}
+%\citembullet \textbf{Daniel Slottje, Ph.D.}  (214) 397-1703
+%\citembullet \textbf{Rusty Tchernis, Ph.D.}  (404) 413-0154
+%\citembullet \textbf{Daniel Millimet, Ph.D.} (214) 768-3269
+%\end{category}
+
+
+%\pagebreak
+%\includepdf[fitpaper,pages=-,landscape=true]{McCarthyCaseList.pdf}
+
+\end{document}

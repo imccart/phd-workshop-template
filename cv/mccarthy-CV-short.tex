@@ -1,0 +1,175 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{changepage}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true,urlcolor=blue,a4paper]{hyperref}
+\usepackage{marvosym}
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+   \fancyfoot[R]{\today}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\leftmargin=-.5in
+\oddsidemargin=0in
+\textwidth=6.5in
+\topmargin=-0.8in
+\textheight=9.7in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newenvironment{mytab}{\begin{adjustwidth}{.5cm}{}}{\end{adjustwidth}}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+	\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[8]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+    \begin{center}
+    {\Large \scshape{#1}} \\
+    \parbox{0cm}{
+    \begin{tabbing}
+        \hspace{1.8in}\= \hspace{.9in}\= \hspace{1.7in}\=\kill % set up three tab positions
+        {#2} \>Phone (\Telefon): \> {#3} \\
+        {#4} \>E-mail (\Letter): \> {#5} \\
+        {#6} \>Website (\MVAt):  \> {#7} \\
+        {#8}
+    \end{tabbing}}
+    \end{center}
+    \end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+\thispagestyle{firststyle}
+
+% ------ Address --------------------------------------------------------
+\contact{Ian McCarthy, PhD}{Emory University}{404-727-8808}{Department of Economics}{\href{mailto:ian.mccarthy@emory.edu}{ian.mccarthy@emory.edu}}{1602 Fishburne Dr.}{\href{www.ianmccarthyecon.com}{Personal Website Link}}{Atlanta, GA 30322}
+\vspace{-.1in}
+
+\begin{tabbing}
+    \hspace{1in}\= \hspace{5in}\=\kill % set up two tab positions
+    \textbf{Education:} \> Ph.D., Economics, Indiana University, Bloomington, IN, May 2008 \\
+    \textbf{Fields:} \> Health Economics, Industrial Organization, Econometrics \\
+    \textbf{Experience:} \> Emory University, Department of Economics, Assistant Professor, 2014 -- present \\
+\end{tabbing}
+\vspace{-.2in}
+
+\header{Positions and Honors}
+\begin{body}
+  \vspace{13pt}
+  National Bureau of Economic Research, Faculty Research Fellow, Health Economics Group, 2017 -- present \\
+  Honorable mention for best paper award, \textit{American Journal of Agricultural Economics} (2016)
+\end{body}
+\smallskip
+
+% --------- Research ----------------------------------------------------
+\header{Selected Peer-reviewed Publications in Economics}
+\begin{body}
+  \vspace{13pt}
+  \begin{enumerate}
+    \item Harris, M., Y. Liu, and \textbf{I. McCarthy}. 2019. ``Capacity Constraints and Time Allocation in Public Health Clinics,'' \textit{Health Economics}, forthcoming.  
+    \item \textbf{McCarthy, I.} 2018 ``Quality Disclosure and the Timing of Insurers' Adjustments: Evidence from Medicare Advantage,'' \textit{Journal of Health Economics} 61:13-26.
+    \item \textbf{McCarthy, I.} and S. Huang. 2018 ``Vertical Alignment Between Hospitals and Physicians as a Bargaining Response to Commercial Insurance Markets,'' \textit{Review of Industrial Organization} 53:7-29.
+    \item Almada, L. and \textbf{I. McCarthy}. 2017. ``It's a Cruel Summer: Household Responses to Reductions in Government Nutrition Assistance,'' \textit{Journal of Economic Behavior and Organization} 143:45-57.
+    \item \textbf{McCarthy, I.} and M. Darden. 2017. ``Supply-side Responses to Public Quality Ratings: Evidence from Medicare Advantage,'' \textit{American Journal of Health Economics} 3(2):140-164.
+    \item \textbf{McCarthy, I.} 2016. ``Eliminating Composite Bias in Treatment Effects Estimates: Applications to Quality of Life Assessment,'' \textit{Journal of Health Economics} 50:47-58.
+    \item Almada, L., \textbf{I. McCarthy}, and R. Tchernis. 2016. ``What Can We Learn about the Effects of Food Stamps on Obesity in the Presence of Misreporting?'' \textit{American Journal of Agricultural Economics}, 98(4):997-1017. \\
+    \item \textbf{McCarthy, I.} 2016. ``Advertising Intensity and Welfare in an Equilibrium Search Model,'' \textit{Economics Letters} 141:20-26.
+    \item \textbf{McCarthy, I.} 2015. ``Putting the Patient in Patient Reported Outcomes: A Robust Methodology for Health Outcomes Assessment,'' \textit{Health Economics} 24(12):1588-1603.
+    \item Darden, M. and \textbf{I. McCarthy}. 2015. ``The Star Treatment: Estimating the Impact of Star Ratings on Medicare Advantage Enrollments,'' \textit{Journal of Human Resources} 50(4):980-1008.
+  \end{enumerate}
+\end{body}
+\smallskip
+
+% ------- Grant Funding ------------------------------------------------------
+\header{Recent Grant Funding}
+\begin{body}
+\vspace{13pt}
+ \textbf{AHRQ (R01HS024712) - \$1,050,158} \hfill 4/2017 -- 1/2021 \\
+ Co-investigator, ``The Value of Children's Hospitals - Are Increased Costs Justified by Improved Outcomes or Driven by Internal and External Economic Forces?'' (with Mehul Raval) \\
+
+ \textbf{National Institute for Health Care Management - \$49,000} \hfill 1/2018 -- 11/2018 \\
+ Co-investigator, ``Private Equity Ownership and Healthcare Quality and Cost: The Evaluation of Hospital Leveraged Buyouts.'' (with Sean Huang) \\
+
+ \textbf{UK Center for Poverty Research - \$50,000 } \hfill 8/2016 -- 7/2018 \\
+ Co-investigator, ``SNAP Benefit Levels, Food Insecurity, and Diet Quality: Evidence from the Food Acquisition and Purchase Survey'' (with Lorenzo Almada) \\
+
+ \textbf{AHRQ (R00/K99 HS022431) - \$912,800} \hfill 7/2013 -- 8/2018 \\
+ Principal Investigator, ``The Measurement and Evaluation of Competition in Healthcare Delivery Markets'' \\
+
+\end{body}
+\smallskip
+
+
+% -------- Referee --------------------------------------------
+%\header{Referee Activity}
+%\begin{body}
+%  \vspace{14pt}
+%  Referee for \textit{Review of Economics and Statistics}, \textit{American Economic Journal: Applied Economics}, \textit{Journal of Health Economics}, \textit{Journal of the American Statistical Association}, \textit{Health Economics}, \textit{American Journal of Agricultural Economics}, \textit{American Journal of Health Economics}, \textit{The B.E. Journal of Economic Analysis and Policy}, \textit{Southern Economic Journal}, \textit{Empirical Economics} (x2), \textit{Review of Economics of the Household}, \textit{Review of Industrial Organization}, \textit{Economic Inquiry}, \textit{Contemporary Economic Policy}, \textit{Economics and Human Biology}, \textit{Stata Journal}, \textit{Journal of Applied Statistics}, \textit{International Journal of Mathematical Modelling and Numerical Optimisation}, \textit{Mayo Clinic Proceedings} (x3), and \textit{British Medical Journal}
+%\end{body}
+%\smallskip
+
+% -------- Teaching --------------------------------------------
+\header{Courses Taught}
+\begin{body}
+ \vspace{14pt}
+ ECON 372, Economics of Healthcare Markets; ECON 190, Current Issues in U.S. Healthcare; ECON 372W, Health Policy and Economics; ECON 771, Health Economics II; ECON 470/HLTH 470, Research in Health Economics
+\end{body}
+\smallskip
+
+% -------- Advising --------------------------------------------
+\header{Major Service and Advising}
+\begin{body}
+  \vspace{14pt}
+  Committee member for Ph.D. dissertations: Emory (3), Georgia State University (4); Chair for undergraduate honors thesis (7); Selection committee for faculty searches (2); Admissions committee for Economics Ph.D. program; Organizer for Bi-annual Georgia Health Economics Research Day; Chair of Economics Department Assessment Committee; Chair of Economics Department Grant Writing Committee; Chair of Economics Department IRB Review Committee; Microeconomics Seminar Series Coordinator
+  \end{body}
+
+\end{document}

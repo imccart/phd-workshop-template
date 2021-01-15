@@ -1,0 +1,168 @@
+
+\documentclass[12pt]{article}
+
+%---------------------------------------------------------
+% This package gives us small margins, lettings us use
+% most of the page.
+%---------------------------------------------------------
+\usepackage[letterpaper,margin=2cm,bottom=4cm,top=3cm,nohead]{geometry}
+
+
+%---------------------------------------------------------
+% AMS Packages for math symbols, fonts, environments, etc.
+%---------------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+%--------------------------------------------------------------
+% A command for typesetting and linking an email address.
+%--------------------------------------------------------------
+\newcommand{\email}[1]{\href{mailto:#1}{\tt \textcolor{cornflower}{#1}}}
+
+%--------------------------------------------------------------
+% This package is used to define custom colors.
+%--------------------------------------------------------------
+\usepackage{xcolor}
+
+%--------------------------------------------------------------
+% A few colors for hyperlinks.
+%--------------------------------------------------------------
+\definecolor{plum}{rgb}{0.36078, 0.20784, 0.4}
+\definecolor{chameleon}{rgb}{0.30588, 0.60392, 0.023529}
+\definecolor{cornflower}{rgb}{0.12549, 0.29020, 0.52941}
+\definecolor{scarlet}{rgb}{0.8, 0, 0}
+\definecolor{brick}{rgb}{0.64314, 0, 0}
+
+%---------------------------------------------------------
+% The hyperref package.
+%---------------------------------------------------------
+\usepackage[%
+    pdftitle={Centennial},
+    pdfauthor={David Tomas Jacho-Chavez},
+    pdfsubject={The Review of Economics and Statistics Centennial},
+    pdfkeywords={},
+    colorlinks=true,  %display links in different colors
+    linkcolor=cornflower, %internal links
+    citecolor=scarlet, %references to a bibliography
+    urlcolor=chameleon %URLs
+]{hyperref}
+
+%---------------------------------------------------------
+% We need this package to display the logo
+%---------------------------------------------------------
+\usepackage{graphicx}
+
+%---------------------------------------------------------
+% Change the spacing b/t lines and paragraphs.
+%---------------------------------------------------------
+\setlength{\parskip}{0.75em}
+\setlength{\parindent}{1.75em}
+
+\usepackage{afterpage}
+
+\usepackage[strict]{changepage}
+\usepackage[authoryear]{natbib}
+
+\pagestyle{empty}
+
+\begin{document}
+%---------------------------------------------------------
+% The first page should have the letterhead on it.
+%---------------------------------------------------------
+\hspace{-1.5cm}
+\begin{minipage}[c]{8in}\vskip-2cm
+\begin{flushleft}
+	\begin{minipage}[c]{6cm}
+		\begin{flushleft}
+			\includegraphics*[width=6cm]{C:/emory.pdf}%
+		\end{flushleft}
+	\end{minipage}
+	\,\,
+	\begin{minipage}[c]{0.25cm}
+		\vrule depth 0.1\textheight
+	\end{minipage}
+	\,
+	\begin{minipage}[c]{8cm}
+		\footnotesize
+		{\sffamily
+			David T. Jacho-Ch\'{a}vez, Associate Professor\\
+			Department of Economics \\
+			1602 Fishburne Dr \,\vrule depth 0.25em \, Atlanta, GA 30322 \\
+			p (404) 727-1381 \,\vrule depth 0.25em \, f (404) 727-4639 \\
+			\email{djachocha@emory.edu}
+		}
+	\end{minipage}
+\end{flushleft}
+\end{minipage}
+
+
+
+%---------------------------------------------------------
+% Use larger margins for the body of the letter.
+%---------------------------------------------------------
+\begin{adjustwidth}{4em}{4em}
+	
+%---------------------------------------------------------
+% Insert today's date.
+%---------------------------------------------------------
+~\vskip.4cm
+\hfill \today
+
+%---------------------------------------------------------
+% The Salutation
+%---------------------------------------------------------
+\vskip.5cm
+{\noindent The Editors\newline
+\noindent Economics Letters \newline%
+\noindent Elsevier\newline}\vskip4pt
+
+%---------------------------------------------------------
+% The Body of the letter
+%---------------------------------------------------------
+\changepage{}{}{}{}{}{1cm}{}{}{}
+
+\noindent \underline{Re: New submission to the \emph{Economics Letters}}\newline\newline
+
+\noindent I am submitting our paper
+\textquotedblleft\textbf{Semiparametric Quasi Maximum Likelihood Estimation of the Fractional Response Model},\textquotedblright\ (joint with Santiago Montoya-Bland\'{o}n), for its potential publication in the \emph{Economics Letters}.
+
+\noindent Please do not hesitate in contacting me if you require any further information.\newline
+
+%---------------------------------------------------------
+% Now we issue the closing, and insert a scan of your
+% signature. Just scan your signature, convert to a
+% pdf file, name it "signature.pdf", and put it in the
+% same directory as this .tex file. You may want to remove
+% the comment from the \vskip command, to add a little
+% padding between the signature and the name below.
+%---------------------------------------------------------
+\vskip1cm
+\hfill
+\noindent\begin{minipage}[b]{5cm}
+    Sincerely,\\ ~
+    \includegraphics*[width=5cm]{C:/Firma1.pdf}
+    %\vskip.5em
+    David Tom\'{a}s Jacho-Ch\'{a}vez
+    \end{minipage}
+\end{adjustwidth}
+
+%\begin{adjustwidth}{-1cm}{-1cm}
+\begin{adjustwidth}{4em}{4em}
+\vspace{-7mm}
+%\bibliographystyle{jae}
+%\bibliography{referee}
+
+\end{adjustwidth}
+%\changepage{}{}{}{}{}{1cm}{}{}{}
+
+%---------------------------------------------------------
+% The fancyhdr package can insert a web address and
+% email address at the bottom of the page.
+%---------------------------------------------------------
+
+
+
+
+\end{document}
